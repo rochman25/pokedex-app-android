@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav"
+    app:startDestination="@id/listPokemonFragment">
+
+    <fragment
+        android:id="@+id/listPokemonFragment"
+        android:name="com.dicoding.picodiploma.pokedex.ui.layout.ListPokemonFragment"
+        android:label="fragment_list_pokemon"
+        tools:layout="@layout/fragment_list_pokemon" >
+        <action
+            android:id="@+id/action_listPokemonFragment_to_detailPokemonFragment"
+            app:destination="@id/detailPokemonFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailPokemonFragment"
+        android:name="com.dicoding.picodiploma.pokedex.ui.layout.DetailPokemonFragment"
+        android:label="fragment_detail_pokemon"
+        tools:layout="@layout/fragment_detail_pokemon" />
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.dicoding.picodiploma.pokedex.ui.layout.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+</navigation>
